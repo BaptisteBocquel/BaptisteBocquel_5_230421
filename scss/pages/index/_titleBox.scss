@@ -1,0 +1,44 @@
+.box{
+    position:relative;
+    width: 70%;
+    height: 600px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 25px;
+    @include smartphone{
+        width: 100%;
+        height: 300px;
+    }
+
+    @include tablette{
+        width: 100%;
+        height:400px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.85;   
+        
+    }
+    .legende{
+        font-family: 'Original Surfer', cursive;
+        position : absolute;
+        top: 70%;
+        width: 100%;
+        color: white;
+        text-align: center;
+        @include tablette{
+            top: 55%;
+        }
+        h1{
+            @include smartphone{
+                font-size: 24px; 
+            }
+
+        }
+    }
+    
+}
+
+

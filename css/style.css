@@ -9928,17 +9928,98 @@ h3 {
     border-color: #dee2e6;
   }
 }
+body {
+  background-color: #f6eee9;
+}
+
+.nav-link {
+  text-align: right;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@keyframes hoverObjects {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+.btn-grad {
+  background-image: linear-gradient(to right, #603813 0%, #b29f94 51%, #603813 100%);
+  margin: 0 auto;
+  padding: 15px 45px;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  width: 250px;
+}
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.linkToShopping {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+.linkToShopping:hover {
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+
+.btn-grad-2 {
+  background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF 51%, #ECE9E6 100%);
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: black;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  width: 250px;
+  border: 1px solid black;
+}
+.btn-grad-2:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  text-decoration: none;
+}
+
 .box {
   position: relative;
   width: 70%;
-  height: 400px;
+  height: 600px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 50px;
   border-radius: 25px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
   .box {
     width: 100%;
+    height: 300px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+  .box {
+    width: 100%;
+    height: 400px;
   }
 }
 .box img {
@@ -9948,36 +10029,21 @@ h3 {
   opacity: 0.85;
 }
 .box .legende {
+  font-family: "Original Surfer", cursive;
   position: absolute;
-  top: 55%;
+  top: 70%;
   width: 100%;
   color: white;
   text-align: center;
 }
-@media screen and (max-width: 600px) {
-  .box .legende h1 {
-    font-size: 24px;
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+  .box .legende {
+    top: 55%;
   }
 }
-.box .legendeImg {
-  position: absolute;
-  top: 25%;
-  text-align: center;
-  width: 100%;
-  height: 100px;
-}
-.box .legendeImg img {
-  display: inline-block;
-  border-radius: 15px;
-  width: 300px;
-  margin: auto;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.85;
-}
-@media screen and (max-width: 600px) {
-  .box .legendeImg img {
-    width: 90%;
+@media screen and (max-width: 599px) {
+  .box .legende h1 {
+    font-size: 24px;
   }
 }
 
@@ -9993,6 +10059,188 @@ h3 {
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  margin-bottom: 50px;
 }
+#objects .objects_price {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+#objects .objects_title {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+#objects .objects_img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+#objects a {
+  color: black;
+}
+#objects a:hover {
+  color: black;
+  text-decoration: none;
+}
+#objects .objects_elements {
+  box-shadow: 1px 1px 15px black;
+  width: 450px;
+  margin: 30px;
+  padding: 10px;
+  background-color: #fff;
+}
+#objects .objects_elements:hover {
+  animation: hoverObjects 700ms ease-in-out forwards;
+}
+
+#card {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f6eee9;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#card .productTitle {
+  text-align: center;
+}
+#card .productPrice {
+  text-align: center;
+}
+#card .productImg {
+  object-fit: contain;
+  width: 100%;
+  max-height: 300px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+#card .productDescription {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+  #card .productDescription {
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+}
+#card .productForm {
+  text-align: center;
+}
+#card .productForm p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#card .productForm form {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#card .productForm form input {
+  margin-right: 20px;
+}
+#card .productForm form label {
+  width: 150px;
+}
+
+#formShop {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  #formShop {
+    padding-right: 30%;
+    padding-left: 30%;
+  }
+}
+#formShop p {
+  font-weight: bold;
+  text-align: center;
+}
+#formShop #divSubmit {
+  text-align: center;
+}
+
+#shop {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 1200px) {
+  #shop {
+    padding-right: 30%;
+    padding-left: 30%;
+  }
+}
+#shop h1 {
+  font-size: 20px;
+  text-align: center;
+}
+#shop .div-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-top: 30px;
+}
+#shop .div-item .divQty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#shop .div-item .divQty p {
+  margin-bottom: 0 !important;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#shop .shop_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#shop .div_img {
+  width: 110px;
+  height: 120px;
+}
+#shop .div-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0 !important;
+}
+#shop .name-product {
+  font-weight: bold;
+}
+
+#empty {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#confirm {
+  text-align: center;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+#confirm h1 {
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+#confirm span {
+  font-weight: bold;
+}
+#confirm p {
+  margin-bottom: 60px;
+}
+
+/*.footer{
+    position: absolute;
+    bottom: 0;
+     width: 100%;
+}*/
 
 /*# sourceMappingURL=style.css.map */

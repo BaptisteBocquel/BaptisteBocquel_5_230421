@@ -1,0 +1,51 @@
+#card{
+    width : 100%;
+    margin: 0 auto;
+    background-color :  #f6eee9;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    .productTitle{
+        text-align: center;
+    }
+    .productPrice{
+        text-align: center;
+    }
+    .productImg{
+        object-fit: contain;
+        width: 100%;
+        max-height: 300px;
+        margin-bottom : 40px;
+        margin-top: 40px;
+        
+    }
+    .productDescription{
+        text-align :center;
+        font-weight: bold;
+        margin-bottom: 40px;
+        padding: 10px;
+        @include tablette{
+            margin-right: 80px;
+            margin-left : 80px;
+        }
+        
+    }
+    .productForm{
+        text-align: center;
+        p{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        form{
+            text-align: center;
+            margin-bottom : 40px;
+            input{
+                margin-right: 20px;
+            }
+            label{
+                width: 150px;
+            }
+        }
+        
+    }
+}

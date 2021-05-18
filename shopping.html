@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orinoco - Achats de Caméras en ligne</title>
+    <meta description="Orinoco est un site en ligne spécialisé dans la vente de caméra de grande qualité.">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">   
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid px-md-5">
+          <a class="navbar-brand" href="index.html">
+            <i class="fas fa-shopping-cart"></i>
+              Orinoco
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="shopping.html">Panier (<span>0</span>)</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="shop">
+        
+      </div>
+
+      <div id="formShop">
+      <p>Veuillez remplir ce formulaire pour passer commande :</p>
+
+      <form id="form">
+      
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Nom</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Dupont">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlInput2">Prénom</label>
+          <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Louis">
+        </div>
+
+        <div id="controlInput2">
+          
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlInput3">Mail</label>
+          <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="nom.prenom@exemple.com">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlInput4">Adresse</label>
+          <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="2 place des Justes">
+        </div>
+
+        <div class="form-group">
+          <label for="exampleFormControlInput5">Ville</label>
+          <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="Paris">
+        </div>
+
+        <div class="form-group" id="divSubmit">
+          <input type="submit" value="Envoyer" id="buttonSubmit" />
+        </div>
+        
+        
+      </form>
+      </div>
+      <div class="bg-light py-4 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="list text-center list-unstyled">
+                        <li class="list-item"><a href="#">À propos</a></li>
+                        
+                        <li class="list-item"><a href="#">Vie privée</a></li>
+                        
+                        <li class="list-item"><a href="#">Conditions d'utilisation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="js/classes/Request.js"></script>
+    <script src="js/classes/Cards.js"></script>
+    <script src="js/classes/Shopping.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+</html>

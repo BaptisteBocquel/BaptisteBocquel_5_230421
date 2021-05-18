@@ -1,0 +1,59 @@
+.btn-grad {
+    background-image: linear-gradient(to right, #603813 0%, #b29f94  51%, #603813  100%);
+    margin: 0 auto;
+    padding: 15px 45px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    width: 250px;
+    &:hover {
+            background-position: right center; 
+            color: #fff;
+            text-decoration: none;
+    }
+}
+        
+
+.linkToShopping{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  &:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+  }
+}
+
+
+
+.btn-grad-2 {
+   background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF  51%, #ECE9E6  100%);
+   margin: 0 auto;
+   margin-bottom : 20px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: black;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   width: 250px;
+   border: 1px solid black;
+   &:hover{
+    background-position: right center; /* change the direction of the change here */
+    text-decoration: none;
+   }
+ }
+
+
+
+

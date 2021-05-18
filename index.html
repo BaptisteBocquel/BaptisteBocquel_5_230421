@@ -29,7 +29,7 @@
                 <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="shopping.html">Panier</a>
+                <a class="nav-link" href="shopping.html">Panier (<span>0</span>)</a>
               </li>
             </ul>
           </div>
@@ -39,9 +39,7 @@
     
       <div class="box">
         <img src="img/camera-jumbo.jpg" alt="appareil photo">
-        <div class="legendeImg">
-          <img src="img/orinoco.png" alt="logo orinoco">
-        </div>
+        
         <div class="legende">
           <h1>e-Commerce <br> spécialiste de la photographie</h1>
         </div>
@@ -49,14 +47,34 @@
 
       <div class="presentation">
         <h2>Venez découvrir nos derniers articles : </h2>
-        <p>Orinoco vous garantis des produits de hautes qualités. Cliquez les yeux fermés !</p>
+        <p>Orinoco vous garantis des produits de haute qualité. Cliquez les yeux fermés !</p>
       </div>
 
       <div id="objects"></div>
-              
+      
+      <div class="bg-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="list text-center list-unstyled">
+                        <li class="list-item"><a href="#">À propos</a></li>
+                        
+                        <li class="list-item"><a href="#">Vie privée</a></li>
+                        
+                        <li class="list-item"><a href="#">Conditions d'utilisation</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
+    <script src="js/classes/Request.js"></script>
+    <script src="js/classes/Cards.js"></script>
+    <script src="js/classes/Shopping.js"></script>
+    <script src="js/main.js"></script>
+    
+    
 </body>
 </html>
