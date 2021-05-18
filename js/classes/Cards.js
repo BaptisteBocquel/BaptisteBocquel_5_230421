@@ -194,6 +194,7 @@ class Cards {
             let priceProduct = document.createElement('p');
             divItem.appendChild(divPrice);
             divPrice.appendChild(priceProduct);
+            divPrice.className = 'div-price';
             priceProduct.textContent = price * quantity +' €'; 
             priceProduct.id = 'price' + i;   
         
