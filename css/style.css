@@ -84,14 +84,7 @@ p {
   margin-bottom: 1rem;
 }
 
-abbr[title],
-abbr[data-original-title] {
-  text-decoration: underline;
-  text-decoration: underline dotted;
-  cursor: help;
-  border-bottom: 0;
-  text-decoration-skip-ink: none;
-}
+
 
 address {
   margin-bottom: 1rem;
@@ -4504,25 +4497,7 @@ input[type=button].btn-block {
   }
 }
 
-.accordion {
-  overflow-anchor: none;
-}
-.accordion > .card {
-  overflow: hidden;
-}
-.accordion > .card:not(:last-of-type) {
-  border-bottom: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.accordion > .card:not(:first-of-type) {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-.accordion > .card > .card-header {
-  border-radius: 0;
-  margin-bottom: -1px;
-}
+
 
 .breadcrumb {
   display: flex;
