@@ -47,32 +47,73 @@
       
         <div class="form-group">
           <label for="exampleFormControlInput1">Nom</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Dupont">
+          <input type="text" class="form-control"  id="exampleFormControlInput1" placeholder="Dupont" required>
+          <div class="valid-feedback" id="validName">
+            
+          </div>
+          <div class="invalid-feedback" id="invalidName">
+            
+          </div>
         </div>
 
         <div class="form-group">
           <label for="exampleFormControlInput2">Prénom</label>
-          <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Louis">
+          <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Louis" required>
+          <div class="valid-feedback" id="validFirstName">
+            
+          </div>
+          <div class="invalid-feedback" id="invalidFirstName">
+            
+          </div>
         </div>
 
-        <div id="controlInput2">
-          
-        </div>
 
         <div class="form-group">
           <label for="exampleFormControlInput3">Mail</label>
-          <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="nom.prenom@exemple.com">
+          <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="nom.prenom@exemple.com" required>
+          <div class="valid-feedback" id="validEmail">
+            
+          </div>
+          <div class="invalid-feedback" id="invalidEmail">
+            
+          </div>
         </div>
 
         <div class="form-group">
           <label for="exampleFormControlInput4">Adresse</label>
-          <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="2 place des Justes">
+          <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="2 place des Justes" required>
+          <div class="valid-feedback" id="validAdress">
+            
+          </div>
+          <div class="invalid-feedback" id="invalidAdress">
+            
+          </div>
+        </div>
+
+        
+        <div class="form-group">
+          <label for="exampleFormControlInput5">Code Postal</label>
+          <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="75000" required> 
+          <div class="valid-feedback" id="validCp">
+            
+          </div>
+          <div class="invalid-feedback" id="invalidCp">
+            
+          </div> 
         </div>
 
         <div class="form-group">
-          <label for="exampleFormControlInput5">Ville</label>
-          <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="Paris">
+          <label for="exampleFormControlInput6">Ville</label>
+          <input type="text" class="form-control" id="exampleFormControlInput6" placeholder="Paris" required>
+          <div class="valid-feedback" id="validCity">
+            
+          </div>
+          <div class="invalid-feedback" id="invalidCity">
+            
+          </div>
         </div>
+          
+        
 
         <div class="form-group" id="divSubmit">
           <input type="submit" value="Envoyer" id="buttonSubmit" />
@@ -101,7 +142,9 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="js/classes/Request.js"></script>
+
     <script src="js/classes/Cards.js"></script>
+    <script src="js/classes/Form.js"></script>
     <script src="js/classes/Shopping.js"></script>
     <script src="js/shop.js"></script>
 </body>

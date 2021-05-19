@@ -196,7 +196,10 @@ class Cards {
             divPrice.appendChild(priceProduct);
             divPrice.className = 'div-price';
             priceProduct.textContent = price * quantity +' €'; 
-            priceProduct.id = 'price' + i;   
+            priceProduct.id = 'price' + i; 
+            priceProduct.className = 'prices';
+            
+            
         
     }
     

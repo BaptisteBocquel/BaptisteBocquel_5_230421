@@ -22,8 +22,11 @@ request.getApiData("http://localhost:3000/api/cameras/" + id)
                 shopping.addToShop(response,choice);
 
                 })
+
                 shopping.onLoadShopNumbers(); 
+
         }else{
+                
                 window.location.href='index.html';
         }
                        

@@ -143,14 +143,6 @@ class Shopping {
     };
    }
    
-   verifFormValue(value){
-    if (value == ""){ 
-        alert("Veuillez remplir tous les champs");
-        return false;
-    }else{
-        return true;
-    }
-   }
 
    verifLengthArray(array){
        if (array.length == 0){
@@ -175,6 +167,17 @@ class Shopping {
                 return response[i].imageUrl;
             }
         }
+    }
+
+    getTotalPrice(totalPrice){
+
+        
+        let allPrice = document.getElementsByClassName('prices');
+        let somme = 0;
+        for (let i = 0; i<allPrice.length; i++){
+            somme = somme + parseInt(allPrice[i].innerHTML);
+        }
+        totalPrice.textContent = somme + ' €';
     }
     
 }

@@ -5,7 +5,7 @@
     padding-right: 30px;
     padding-left:30px;
     h1{
-        margin-top: 120px;
+        margin-top: 80px;
         margin-bottom : 50px;
     }
     span{
@@ -14,5 +14,14 @@
     p{
         margin-bottom: 60px;
     }
+}
+
+#footerConfirm{
+    @include pc{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    
 }
 
