@@ -142,16 +142,6 @@ class Shopping {
         }
     };
    }
-   
-
-   verifLengthArray(array){
-       if (array.length == 0){
-           alert("Votre panier est vide");
-           return false;
-       }else{
-           return true;
-       }
-   }
 
    getPrice(id, response){
         for(let i=0; i<response.length; i++){

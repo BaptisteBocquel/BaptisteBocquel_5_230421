@@ -11,7 +11,7 @@ request.getApiData("http://localhost:3000/api/cameras/")
     if(shopData === null || shopData.length === 0){
     
         shopping.shopEmpty();
-        let disabledSubmit = document.getElementById('buttonSubmit');
+        let disabledSubmit = document.getElementById('buttonSubmit'); // if shop is empty, not possible to click to send (form button)
         disabledSubmit.setAttribute('disabled', true)
     
     
@@ -232,5 +232,6 @@ request.getApiData("http://localhost:3000/api/cameras/")
 
 
 
-
+console.log(form.validateCp('75000')); // retourne false
+console.log(form.validateCp(75000)); // retourne false
 shopping.onLoadShopNumbers(); 

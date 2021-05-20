@@ -65,7 +65,7 @@ class Form {
     }
 
     validateCp(cp) {
-        var regex =  /^(([0-8][0-9])|(9[0-5]))[0-9]{3}$/;
+        var regex =  /((0[1-9])|([1-8][0-9])|(9[0-8])|(2A)|(2B))[0-9]{3}/;
         return regex.test(cp.value);
     }
 
@@ -98,13 +98,4 @@ class Form {
         }
     }
 
-    verifFormValue(value){
-        if (value == ""){ 
-            alert("Veuillez remplir tous les champs");
-            return false;
-        }else{
-            return true;
-        }
-       }
-    
 }
