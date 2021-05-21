@@ -116,7 +116,7 @@ class Shopping {
     };
    }
 
-   clickToMinus(data,id,choice,number,thisprice, newprice){
+   clickToMinus(data,id,choice,number,thisprice, priceProduct){
     for(let cartItem of data){
         if(cartItem.id === id && cartItem.lense === choice){
             cartItem.quantity--;
@@ -127,7 +127,7 @@ class Shopping {
                 let getQty = document.getElementById('quantite'+number);
                 let getPrice = document.getElementById('price'+number)
                 getQty.textContent = "Quantité : " + newQty;
-                getPrice.textContent = thisprice - newprice + ' €';
+                getPrice.textContent = thisprice - priceProduct + ' €';
                 return localStorage.setItem('shop', JSON.stringify(data));
             }else{
                 let getDivItem = document.getElementById('div-item'+number)

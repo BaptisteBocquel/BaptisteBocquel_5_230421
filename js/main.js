@@ -4,7 +4,7 @@ let shopping = new Shopping();
 
 request.getApiData("http://localhost:3000/api/cameras/")
 .then(response => {
-    //console.log(response);
+    
     
     for (let i = 0; i < response.length; i++){
         

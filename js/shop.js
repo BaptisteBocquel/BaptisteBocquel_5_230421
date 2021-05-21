@@ -63,10 +63,10 @@ request.getApiData("http://localhost:3000/api/cameras/")
                     let lense = getClickPlus[j].getAttribute('data-lense');
                     let number = getClickPlus[j].getAttribute('data-number');
                     let thisprice = parseInt(document.getElementById('price'+number).innerHTML);
-                    let newprice = shopping.getPrice(id,response);
+                    let priceProduct = shopping.getPrice(id,response);
 
                     shopping.shopNumbers();
-                    shopping.clickToPlus(shopData,id,lense,number,thisprice,newprice);
+                    shopping.clickToPlus(shopData,id,lense,number,thisprice,priceProduct);
                     shopping.getTotalPrice(totalPrice);
 
                 });        
@@ -232,6 +232,5 @@ request.getApiData("http://localhost:3000/api/cameras/")
 
 
 
-console.log(form.validateCp('75000')); // retourne false
-console.log(form.validateCp(75000)); // retourne false
+
 shopping.onLoadShopNumbers(); 

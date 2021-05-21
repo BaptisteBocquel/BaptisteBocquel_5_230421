@@ -5,7 +5,6 @@ class Request {
       if(response.ok){
         let product = await response.json();
         return product;
-        
       }else{
         console.log("Erreur : " + response.status)
       }    

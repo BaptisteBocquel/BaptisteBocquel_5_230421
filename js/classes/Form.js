@@ -65,7 +65,7 @@ class Form {
     }
 
     validateCp(cp) {
-        var regex =  /((0[1-9])|([1-8][0-9])|(9[0-8])|(2A)|(2B))[0-9]{3}/;
+        var regex =  /^(?:[0-8]\d|9[0-8])\d{3}$/;
         return regex.test(cp.value);
     }
 
